@@ -20,10 +20,10 @@ navLinks.querySelectorAll('a').forEach(link => {
 // TYPEWRITER EFFECT
 // ===========================
 const roles = [
-  'Développeur Web',
-  'Développeur Front-end',
-  'Développeur Back-end',
-  "Créateur d'expériences",
+  'QA Automation Engineer',
+  'Python · Selenium · Playwright',
+  'Expert en tests automatisés',
+  'Disponible à Montréal 🍁',
 ];
 
 let roleIndex = 0;

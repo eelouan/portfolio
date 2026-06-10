@@ -565,6 +565,80 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   EXPERIENCE (date + location)
+=========================== */
+.exp-date {
+  font-size: 0.78rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.exp-location {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin-top: -4px;
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+.education {
+  margin-top: 60px;
+}
+
+.edu-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text-muted);
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.edu-year {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.edu-card strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.edu-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.edu-equiv {
+  color: var(--text-dim) !important;
+  font-style: italic;
+  margin-top: 4px !important;
+}
+
+/* ===========================
    FOOTER
 =========================== */
 .footer {

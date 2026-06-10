@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio d'Elouan Moreau – Développeur passionné." />
-  <title>Elouan Moreau | Portfolio</title>
+  <meta name="description" content="Portfolio d'Elouan Moreau – QA Automation Engineer, disponible à Montréal." />
+  <title>Elouan Moreau | QA Automation Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav-burger" id="burger" aria-label="Menu">
@@ -35,10 +35,11 @@
       <h1 class="hero-name">Elouan Moreau</h1>
       <h2 class="hero-title"><span class="typewriter" id="typewriter"></span><span class="cursor">|</span></h2>
       <p class="hero-desc">
-        Je conçois et développe des expériences web modernes, performantes et accessibles.
+        Ingénieur QA Automation avec 4 ans d'expertise hybride combinant tests automatisés
+        et développement web. Titulaire d'un PVT — disponible à <strong>Montréal</strong> à partir du 13 juillet 2026.
       </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#experience" class="btn btn-primary">Voir mon expérience</a>
         <a href="#contact" class="btn btn-outline">Me contacter</a>
       </div>
     </div>
@@ -58,28 +59,36 @@
         </div>
         <div class="about-text">
           <p>
-            Je suis un développeur passionné par la création d'applications web élégantes et efficaces.
-            J'aime transformer des idées complexes en interfaces simples et intuitives.
+            Ingénieur QA Automation avec plus de 4 ans d'expertise hybride combinant tests
+            automatisés et développement web (Python, PHP, API). Je maîtrise la validation de
+            plateformes e-commerce complexes, de l'interface utilisateur jusqu'aux architectures
+            back-office.
           </p>
           <p>
-            Basé au Canada, je travaille aussi bien sur le front-end que le back-end, toujours avec
-            un souci du détail et une attention particulière à l'expérience utilisateur.
+            Ma valeur ajoutée réside dans ma capacité à concevoir et industrialiser des stratégies
+            de tests à forte composante technique. J'ai notamment orchestré la migration de stacks
+            QA sur serveur et intégré des solutions basées sur l'IA (reconnaissance d'image / OCR),
+            permettant de <strong>réduire de 20 % les anomalies en production</strong>.
           </p>
           <div class="about-details">
             <div class="detail-item">
               <span class="detail-label">Localisation</span>
-              <span class="detail-value">Canada 🍁</span>
+              <span class="detail-value">Montréal 🍁 (dès le 13 juil. 2026)</span>
             </div>
             <div class="detail-item">
               <span class="detail-label">Disponibilité</span>
               <span class="detail-value status-available">Disponible</span>
             </div>
             <div class="detail-item">
+              <span class="detail-label">Expérience</span>
+              <span class="detail-value">4 ans · QA Automation</span>
+            </div>
+            <div class="detail-item">
               <span class="detail-label">Langues</span>
-              <span class="detail-value">Français, Anglais</span>
+              <span class="detail-value">Français (natif) · Anglais (intermédiaire)</span>
             </div>
           </div>
-          <a href="#" class="btn btn-primary" download>Télécharger mon CV</a>
+          <a href="CV_Elouan_Moreau_QA.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
         </div>
       </div>
     </div>
@@ -92,35 +101,35 @@
       <div class="skills-grid">
 
         <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
-          <h3>Front-end</h3>
+          <div class="skill-icon">🧪</div>
+          <h3>Tests & QA</h3>
           <ul>
-            <li>HTML5 / CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React / Vue.js</li>
-            <li>Responsive Design</li>
+            <li>Plans &amp; cas de test</li>
+            <li>Tests fonctionnels E2E</li>
+            <li>Tests de Non-Régression (TNR)</li>
+            <li>TestRail · Agile/Scrum</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Automatisation</h3>
+          <ul>
+            <li>Selenium WebDriver</li>
+            <li>Robocorp (Python)</li>
+            <li>Playwright</li>
+            <li>Panther (Symfony/PHPUnit)</li>
           </ul>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon">⚙️</div>
-          <h3>Back-end</h3>
+          <h3>Développement</h3>
           <ul>
-            <li>Node.js / Express</li>
-            <li>Python / Django</li>
-            <li>REST APIs</li>
-            <li>SQL / NoSQL</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🛠️</div>
-          <h3>Outils</h3>
-          <ul>
-            <li>Git / GitHub</li>
-            <li>Docker</li>
-            <li>Linux / CLI</li>
-            <li>Figma</li>
+            <li>Python · PHP</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li>API REST</li>
+            <li>Git · IA / OCR / Image</li>
           </ul>
         </div>
 
@@ -128,75 +137,97 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
     <div class="container">
-      <h2 class="section-title">Mes <span class="accent">projets</span></h2>
+      <h2 class="section-title">Mon <span class="accent">expérience</span></h2>
       <div class="projects-grid">
 
         <article class="project-card">
           <div class="project-header">
-            <span class="project-icon">🗂️</span>
-            <div class="project-links">
-              <a href="#" aria-label="GitHub" title="Voir le code">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#" aria-label="Démo" title="Voir la démo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
+            <span class="project-icon">🏢</span>
+            <span class="exp-date">Avr. 2023 – Juin 2026</span>
           </div>
-          <h3 class="project-title">Nom du projet 1</h3>
-          <p class="project-desc">Description courte du projet. Ce que ça fait, quel problème ça résout.</p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">MongoDB</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header">
-            <span class="project-icon">📊</span>
-            <div class="project-links">
-              <a href="#" aria-label="GitHub" title="Voir le code">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#" aria-label="Démo" title="Voir la démo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Nom du projet 2</h3>
-          <p class="project-desc">Description courte du projet. Ce que ça fait, quel problème ça résout.</p>
+          <h3 class="project-title">QA Tester — Carter Cash</h3>
+          <p class="exp-location">Lille, France · 3 ans 2 mois</p>
+          <p class="project-desc">
+            Migration de la stack QA vers un serveur partagé avec reconnaissance d'image (IA / Python).
+            Automatisation E2E du parcours client (site, caisse, livraison, WMS, TMS).
+            Réduction de <strong>20 % des anomalies en production</strong>.
+          </p>
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">Django</span>
-            <span class="tag">PostgreSQL</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">Playwright</span>
+            <span class="tag">Agile/Scrum</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-header">
-            <span class="project-icon">🎨</span>
-            <div class="project-links">
-              <a href="#" aria-label="GitHub" title="Voir le code">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#" aria-label="Démo" title="Voir la démo">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
+            <span class="project-icon">🔍</span>
+            <span class="exp-date">Mai 2022 – Avr. 2023</span>
           </div>
-          <h3 class="project-title">Nom du projet 3</h3>
-          <p class="project-desc">Description courte du projet. Ce que ça fait, quel problème ça résout.</p>
+          <h3 class="project-title">Analyste QA — Compéthance</h3>
+          <p class="exp-location">Mission Carter Cash · Lille, France · 1 an</p>
+          <p class="project-desc">
+            Construction des fondations de la stack QA e-commerce de Carter Cash.
+            Rédaction des plans de tests, campagnes TNR et premiers scripts d'automatisation
+            fonctionnelle.
+          </p>
           <div class="project-tags">
-            <span class="tag">Vue.js</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Tailwind</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Selenium</span>
+            <span class="tag">PHPUnit</span>
+            <span class="tag">Panther</span>
+            <span class="tag">TestRail</span>
           </div>
         </article>
 
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">💻</span>
+            <span class="exp-date">Août 2020 – Avr. 2022</span>
+          </div>
+          <h3 class="project-title">Développeur Web — Compéthance</h3>
+          <p class="exp-location">Lille, France · 1 an 9 mois</p>
+          <p class="project-desc">
+            Développement front-end et back-end (Fondation du Nord). Conception et déploiement
+            d'une API interne, création de l'intranet e-learning, intégration de maquettes via
+            WordPress.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Angular</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">API REST</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="education">
+        <h3 class="edu-title">Formation</h3>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <span class="edu-year">2020 – 2021</span>
+            <div>
+              <strong>Licence en informatique</strong>
+              <p>IUT Arles, France · Formation en alternance</p>
+              <p class="edu-equiv">Équivalence Québec : Baccalauréat en informatique</p>
+            </div>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">2017 – 2020</span>
+            <div>
+              <strong>DUT Informatique</strong>
+              <p>IUT Arles, France</p>
+              <p class="edu-equiv">Équivalence Québec : DEC technique</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -207,19 +238,19 @@
       <h2 class="section-title">Me <span class="accent">contacter</span></h2>
       <div class="contact-grid">
         <div class="contact-info">
-          <p>Tu as un projet en tête, une opportunité ou juste envie de dire bonjour ? N'hésite pas à m'écrire.</p>
+          <p>Tu as une opportunité ou un projet à Montréal ? N'hésite pas à me contacter — je serai disponible à partir du <strong>13 juillet 2026</strong>.</p>
           <div class="contact-links">
-            <a href="mailto:elouan@example.com" class="contact-link">
+            <a href="mailto:elouan.moreau@live.fr" class="contact-link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              elouan@example.com
-            </a>
-            <a href="https://github.com/eelouan" target="_blank" rel="noopener" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              github.com/eelouan
+              elouan.moreau@live.fr
             </a>
             <a href="https://linkedin.com/in/elouan-moreau" target="_blank" rel="noopener" class="contact-link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               linkedin.com/in/elouan-moreau
+            </a>
+            <a href="https://github.com/eelouan" target="_blank" rel="noopener" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/eelouan
             </a>
           </div>
         </div>
@@ -247,7 +278,7 @@
   <footer class="footer">
     <div class="container">
       <p>Conçu et développé par <strong>Elouan Moreau</strong> · 2026</p>
-      <p class="footer-sub">Fait avec HTML, CSS &amp; JavaScript · Hébergé sur GitHub Pages</p>
+      <p class="footer-sub">HTML · CSS · JavaScript · GitHub Pages</p>
     </div>
   </footer>
 
