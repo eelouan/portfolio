@@ -186,6 +186,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   position: relative;
   padding-top: var(--nav-height);
+  padding-bottom: 100px;
   background:
     radial-gradient(ellipse 60% 50% at 50% -10%, rgba(0, 212, 255, 0.08) 0%, transparent 70%),
     var(--bg);
