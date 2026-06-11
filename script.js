@@ -139,6 +139,19 @@ if (statsSection) {
 }
 
 // ===========================
+// AVAILABILITY COUNTDOWN
+// ===========================
+(function () {
+  const target = new Date('2026-07-13T00:00:00');
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const diff = Math.ceil((target - today) / (1000 * 60 * 60 * 24));
+  const el = document.getElementById('availCountdown');
+  if (!el) return;
+  el.textContent = diff > 0 ? `dans ${diff} jour${diff > 1 ? 's' : ''}` : 'dès maintenant';
+})();
+
+// ===========================
 // CONTACT FORM — Formspree
 // ===========================
 // 1. Crée un compte gratuit sur https://formspree.io
