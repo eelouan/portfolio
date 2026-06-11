@@ -106,7 +106,7 @@ window.addEventListener('scroll', () => {
 // 1. Crée un compte gratuit sur https://formspree.io
 // 2. Crée un nouveau formulaire avec elouan.moreau@live.fr
 // 3. Remplace YOUR_FORM_ID par ton vrai ID (ex: xyzabc12)
-const FORMSPREE_ID = 'YOUR_FORM_ID';
+const FORMSPREE_ID = 'xojznnpb';
 
 async function handleSubmit(e) {
   e.preventDefault();
