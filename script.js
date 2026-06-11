@@ -101,26 +101,53 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ===========================
-// CONTACT FORM (demo)
+// CONTACT FORM — Formspree
 // ===========================
-function handleSubmit(e) {
+// 1. Crée un compte gratuit sur https://formspree.io
+// 2. Crée un nouveau formulaire avec elouan.moreau@live.fr
+// 3. Remplace YOUR_FORM_ID par ton vrai ID (ex: xyzabc12)
+const FORMSPREE_ID = 'YOUR_FORM_ID';
+
+async function handleSubmit(e) {
   e.preventDefault();
+  const form = e.target;
   const note = document.getElementById('formNote');
-  const btn = e.target.querySelector('button[type="submit"]');
+  const btn = form.querySelector('button[type="submit"]');
+
+  if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+    note.textContent = '⚠️ Configure ton ID Formspree dans script.js.';
+    note.style.color = '#f87171';
+    return;
+  }
 
   btn.disabled = true;
   btn.textContent = 'Envoi en cours…';
+  note.textContent = '';
 
-  setTimeout(() => {
-    note.textContent = 'Message envoyé ! Je te répondrai rapidement.';
-    note.style.color = '#4ade80';
-    btn.textContent = 'Message envoyé';
-    e.target.reset();
+  try {
+    const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' },
+    });
 
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.textContent = 'Envoyer le message';
-      note.textContent = '';
-    }, 4000);
-  }, 1200);
+    if (res.ok) {
+      note.textContent = 'Message envoyé ! Je te répondrai rapidement.';
+      note.style.color = '#4ade80';
+      btn.textContent = 'Message envoyé ✓';
+      form.reset();
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer le message';
+        note.textContent = '';
+      }, 5000);
+    } else {
+      throw new Error();
+    }
+  } catch {
+    note.textContent = 'Erreur lors de l\'envoi. Contacte-moi par email directement.';
+    note.style.color = '#f87171';
+    btn.disabled = false;
+    btn.textContent = 'Réessayer';
+  }
 }
