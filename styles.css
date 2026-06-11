@@ -84,6 +84,12 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   transition: all var(--transition);
   border: 2px solid transparent;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.35);
 }
 
 .btn-primary {
