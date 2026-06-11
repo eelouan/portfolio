@@ -83,10 +83,11 @@ const observer = new IntersectionObserver((entries) => {
 revealEls.forEach(el => observer.observe(el));
 
 // ===========================
-// ACTIVE NAV LINK ON SCROLL
+// ACTIVE NAV LINK ON SCROLL + BACK TO TOP
 // ===========================
 const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a');
+const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
   let current = '';
@@ -98,7 +99,44 @@ window.addEventListener('scroll', () => {
   navItems.forEach(a => {
     a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
   });
+
+  backToTop.classList.toggle('visible', window.scrollY > 400);
 }, { passive: true });
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ===========================
+// ANIMATED COUNTERS
+// ===========================
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  const prefix = el.dataset.prefix || '';
+  const duration = 1600;
+  const start = performance.now();
+
+  function update(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = prefix + Math.round(eased * target) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
+}
+
+const statsSection = document.querySelector('.stats-section');
+if (statsSection) {
+  new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+      }
+    });
+  }, { threshold: 0.5 }).observe(statsSection);
+}
 
 // ===========================
 // CONTACT FORM — Formspree
