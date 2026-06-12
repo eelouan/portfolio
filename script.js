@@ -97,7 +97,7 @@ window.addEventListener('scroll', () => {
   });
 
   navItems.forEach(a => {
-    a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
+    a.classList.toggle('nav-active', a.getAttribute('href') === `#${current}`);
   });
 
   backToTop.classList.toggle('visible', window.scrollY > 400);
@@ -129,13 +129,15 @@ function animateCounter(el) {
 
 const statsSection = document.querySelector('.stats-section');
 if (statsSection) {
-  new IntersectionObserver((entries) => {
+  const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
+        statsObserver.disconnect();
       }
     });
-  }, { threshold: 0.5 }).observe(statsSection);
+  }, { threshold: 0.5 });
+  statsObserver.observe(statsSection);
 }
 
 // ===========================

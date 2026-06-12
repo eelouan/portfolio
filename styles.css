@@ -155,7 +155,8 @@ img { max-width: 100%; display: block; }
   transition: color var(--transition);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.nav-active {
   color: var(--accent);
 }
 
