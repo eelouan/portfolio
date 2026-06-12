@@ -32,7 +32,7 @@ function initAvatarFallback() {
   if (!img) return;
   img.addEventListener('error', () => {
     img.closest('picture').style.display = 'none';
-    document.querySelector('.avatar-placeholder').style.display = 'flex';
+    document.querySelector('.avatar-placeholder').classList.add('visible');
   });
 }
 

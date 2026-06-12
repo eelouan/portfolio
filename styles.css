@@ -275,18 +275,22 @@ img { max-width: 100%; display: block; }
 }
 
 .avatar-placeholder {
+  display: none;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background: var(--surface);
   border: 3px solid var(--border);
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: -0.04em;
+}
+
+.avatar-placeholder.visible {
+  display: flex;
 }
 
 .about-text p {
