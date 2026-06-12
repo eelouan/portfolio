@@ -96,8 +96,11 @@
       <h2 class="section-title">À propos <span class="accent">de moi</span></h2>
       <div class="about-grid">
         <div class="about-avatar">
-          <img src="1159CCA-elouane%20moreau-498.jpg" alt="Elouan Moreau" class="avatar-img"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <picture>
+            <source srcset="photo.webp" type="image/webp" />
+            <img src="photo.jpg" alt="Elouan Moreau" class="avatar-img"
+                 onerror="this.closest('picture').style.display='none';document.querySelector('.avatar-placeholder').style.display='flex'" />
+          </picture>
           <div class="avatar-placeholder" style="display:none">EM</div>
         </div>
         <div class="about-text">
@@ -146,34 +149,38 @@
         <div class="skill-card">
           <div class="skill-icon">🧪</div>
           <h3>Tests & QA</h3>
-          <ul>
-            <li>Plans &amp; cas de test</li>
-            <li>Tests fonctionnels E2E</li>
-            <li>Tests de Non-Régression (TNR)</li>
-            <li>TestRail · Agile/Scrum</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">Plans de test</span>
+            <span class="skill-tag">Tests E2E</span>
+            <span class="skill-tag">TNR</span>
+            <span class="skill-tag">TestRail</span>
+            <span class="skill-tag">Agile / Scrum</span>
+          </div>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon">🤖</div>
           <h3>Automatisation</h3>
-          <ul>
-            <li>Selenium WebDriver</li>
-            <li>Robocorp (Python)</li>
-            <li>Playwright</li>
-            <li>Panther (Symfony/PHPUnit)</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">Selenium</span>
+            <span class="skill-tag">Playwright</span>
+            <span class="skill-tag">Robocorp</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHPUnit / Panther</span>
+          </div>
         </div>
 
         <div class="skill-card">
           <div class="skill-icon">⚙️</div>
           <h3>Développement</h3>
-          <ul>
-            <li>Python · PHP</li>
-            <li>HTML / CSS / JavaScript</li>
-            <li>API REST</li>
-            <li>Git · IA / OCR / Image</li>
-          </ul>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">IA / OCR</span>
+            <span class="skill-tag">Git</span>
+          </div>
         </div>
 
       </div>

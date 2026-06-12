@@ -401,25 +401,21 @@ img { max-width: 100%; display: block; }
   margin-bottom: 16px;
 }
 
-.skill-card ul {
+.skill-tags {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
-.skill-card li {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  padding-left: 16px;
-  position: relative;
-}
-
-.skill-card li::before {
-  content: '▸';
-  position: absolute;
-  left: 0;
+.skill-tag {
+  background: var(--accent-dim);
   color: var(--accent);
-  font-size: 0.75rem;
+  border: 1px solid rgba(0, 212, 255, 0.18);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-family: 'Fira Code', monospace;
+  white-space: nowrap;
 }
 
 /* ===========================
@@ -896,8 +892,8 @@ img { max-width: 100%; display: block; }
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .contact-grid {
@@ -919,4 +915,7 @@ img { max-width: 100%; display: block; }
   .section { padding: 70px 0; }
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
+  .stats-grid { grid-template-columns: 1fr; gap: 16px; }
+  .stat-number { font-size: 1.8rem; }
+  .hero { padding-bottom: 60px; }
 }
