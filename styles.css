@@ -243,32 +243,6 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
 }
 
-.hero-scroll {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-dim);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.scroll-line {
-  width: 1px;
-  height: 50px;
-  background: linear-gradient(to bottom, var(--text-dim), transparent);
-  animation: scrollPulse 2s ease infinite;
-}
-
-@keyframes scrollPulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
-}
 
 /* ===========================
    ABOUT
@@ -455,21 +429,6 @@ img { max-width: 100%; display: block; }
   font-size: 1.8rem;
 }
 
-.project-links {
-  display: flex;
-  gap: 12px;
-}
-
-.project-links a {
-  color: var(--text-dim);
-  transition: color var(--transition);
-  display: flex;
-  align-items: center;
-}
-
-.project-links a:hover {
-  color: var(--accent);
-}
 
 .project-title {
   font-size: 1.1rem;
@@ -796,9 +755,9 @@ img { max-width: 100%; display: block; }
 }
 
 .edu-equiv {
-  color: var(--text-dim) !important;
+  color: var(--text-dim);
   font-style: italic;
-  margin-top: 4px !important;
+  margin-top: 4px;
 }
 
 /* ===========================
@@ -821,7 +780,7 @@ img { max-width: 100%; display: block; }
 
 .footer-sub {
   margin-top: 6px;
-  font-size: 0.78rem !important;
+  font-size: 0.78rem;
 }
 
 /* ===========================
