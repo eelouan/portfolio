@@ -1,4 +1,15 @@
 // ===========================
+// AVATAR FALLBACK
+// ===========================
+const avatarImg = document.getElementById('avatarImg');
+if (avatarImg) {
+  avatarImg.addEventListener('error', () => {
+    avatarImg.closest('picture').style.display = 'none';
+    document.querySelector('.avatar-placeholder').style.display = 'flex';
+  });
+}
+
+// ===========================
 // BURGER MENU
 // ===========================
 const burger = document.getElementById('burger');
@@ -160,6 +171,8 @@ if (statsSection) {
 // 2. Crée un nouveau formulaire avec elouan.moreau@live.fr
 // 3. Remplace YOUR_FORM_ID par ton vrai ID (ex: xyzabc12)
 const FORMSPREE_ID = 'xojznnpb';
+
+document.getElementById('contactForm').addEventListener('submit', handleSubmit);
 
 async function handleSubmit(e) {
   e.preventDefault();
