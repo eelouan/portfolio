@@ -879,7 +879,8 @@ img { max-width: 100%; display: block; }
   .section { padding: 70px 0; }
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
-  .stats-grid { grid-template-columns: 1fr; gap: 16px; }
-  .stat-number { font-size: 1.8rem; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat-number { font-size: 1.5rem; }
+  .stat-label { font-size: 0.68rem; }
   .hero { padding-bottom: 60px; }
 }
