@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initScrollReveal();
   initNavAndBackToTop();
-  initStatsCounter();
   initAvailabilityCountdown();
   initContactForm();
 });
@@ -141,40 +140,6 @@ function initNavAndBackToTop() {
   });
 }
 
-// ===========================
-// ANIMATED COUNTERS
-// ===========================
-function initStatsCounter() {
-  const section = document.querySelector('.stats-section');
-  if (!section) return;
-
-  function animateCounter(el) {
-    const target = parseInt(el.dataset.target, 10);
-    const suffix = el.dataset.suffix || '';
-    const prefix = el.dataset.prefix || '';
-    const duration = 1600;
-    const start = performance.now();
-
-    function update(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = prefix + Math.round(eased * target) + suffix;
-      if (progress < 1) requestAnimationFrame(update);
-    }
-
-    requestAnimationFrame(update);
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.querySelectorAll('.stat-number').forEach(animateCounter);
-      observer.disconnect();
-    });
-  }, { threshold: 0.5 });
-
-  observer.observe(section);
-}
 
 // ===========================
 // AVAILABILITY COUNTDOWN
