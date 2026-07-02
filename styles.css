@@ -628,7 +628,7 @@ img { max-width: 100%; display: block; }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   text-align: center;
 }
@@ -856,7 +856,7 @@ img { max-width: 100%; display: block; }
   }
 
   .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
