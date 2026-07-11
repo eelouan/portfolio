@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initScrollReveal();
   initNavAndBackToTop();
-  initAvailabilityCountdown();
   initContactForm();
 });
 
@@ -141,18 +140,6 @@ function initNavAndBackToTop() {
 }
 
 
-// ===========================
-// AVAILABILITY COUNTDOWN
-// ===========================
-function initAvailabilityCountdown() {
-  const el = document.getElementById('availCountdown');
-  if (!el) return;
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const diff = Math.ceil((new Date('2026-07-13T00:00:00') - today) / 86_400_000);
-  el.textContent = diff > 0 ? `dans ${diff} jour${diff > 1 ? 's' : ''}` : 'dès maintenant';
-}
 
 // ===========================
 // CONTACT FORM
