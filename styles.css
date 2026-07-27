@@ -259,20 +259,6 @@ img { max-width: 100%; display: block; }
   top: calc(var(--nav-height) + 24px);
 }
 
-.avatar-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 3px solid var(--border);
-  display: block;
-  transition: border-color var(--transition);
-}
-
-.avatar-img:hover {
-  border-color: var(--accent);
-}
 
 .avatar-placeholder {
   display: none;

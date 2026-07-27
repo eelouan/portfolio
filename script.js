@@ -14,25 +14,12 @@ const TYPEWRITER_ROLES = [
 // INIT
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
-  initAvatarFallback();
   initBurgerMenu();
   initTypewriter();
   initScrollReveal();
   initNavAndBackToTop();
   initContactForm();
 });
-
-// ===========================
-// AVATAR FALLBACK
-// ===========================
-function initAvatarFallback() {
-  const img = document.getElementById('avatarImg');
-  if (!img) return;
-  img.addEventListener('error', () => {
-    img.closest('picture').style.display = 'none';
-    document.querySelector('.avatar-placeholder').classList.add('visible');
-  });
-}
 
 // ===========================
 // BURGER MENU
